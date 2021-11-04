@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,KADC,CACD,CAAC,CAAA;EACD,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,IAAI;CAAE",
+    "sources": [
+        "BlogPosts.scss"
+    ],
+    "names": [],
+    "file": "BlogPosts.css"
+}
