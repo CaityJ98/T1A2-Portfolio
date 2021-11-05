@@ -1,12 +1,14 @@
 .blurb{
     img{
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
     flex-direction: wrap;
+    flex-wrap: wrap;
     text-align: center;
-    margin-left: 300px;
+    justify-content: center;
+    
     p {
-        font-size: 40px;
+        font-size: 32px;
     }
 
 
@@ -14,3 +16,20 @@
 }
 }
 
+/*--For mobile devices--*/
+@media screen and (max-width: 375px) {
+   
+    body {
+    background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+   
+}
+.blurb{
+    width: 80vh;
+
+    p {
+        font-size: 32px;
+    }
+}
+
+   
+}

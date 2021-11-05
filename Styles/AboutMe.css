@@ -1,15 +1,32 @@
 .blurb img {
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: wrap;
           flex-direction: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
-  margin-left: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .blurb img p {
-  font-size: 40px;
+  font-size: 32px;
+}
+
+/*--For mobile devices--*/
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+  }
+  .blurb {
+    width: 80vh;
+  }
+  .blurb p {
+    font-size: 32px;
+  }
 }
 /*# sourceMappingURL=AboutMe.css.map */
