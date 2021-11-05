@@ -1,9 +1,20 @@
+@mixin flexCenter($justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}
 body {
     background-image: url("https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
     background-color: #cccccc;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-position:  center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    
+    
+
    }
+
 .nav-header {
     height: 10vh;
    
@@ -16,6 +27,8 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        text-align: center;
+
 
 
         
@@ -24,42 +37,11 @@ body {
 
 }
 .landing div{
-    
-    position: absolute;
-    margin-top: 300px;
-    align-content: center;
-
-}
-
-
-nav a{
-    color: white;
-    text-decoration: none;
-    font-size: 27px;
-
-
-}
-
-.landing{
-
-    width: 100%;
-    height: 100%;
-    position: relative;
-    flex-direction: column;
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
- 
-
-    
-
-
-
+   
 
     h1{ 
         color: black;
-        font-size: 65px;
+        font-size: 20px;
         text-align: center;
         text-decoration: underline;
 
@@ -74,5 +56,55 @@ nav a{
         font-size: 35px
     }
 
+
+}
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 27px;
+    flex-wrap: wrap;
+    display: flex;
+    
+
+
+}
+
+
+
+   /*--For mobile devices--*/
+   @media screen and (max-width: 375px) {
+   
+        body {
+        background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+       
+    }
+    .landing div{
+        padding: 0;
+        flex-wrap: wrap;
+        flex-direction: column; 
+        h1{
+            font-size: large;
+
+        } 
+
+       
+    }
+ 
+}
+
+/*-----For tablets: ---------------*/
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+    }
+}
+
+/*-----For desktop devices ------*/
+@media screen and (min-width: 1025px) {
+    body {
+        background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+   }
 }
 

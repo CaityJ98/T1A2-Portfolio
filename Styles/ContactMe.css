@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=ContactMe.css.map */
+.professional-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=ContactMe.css.map */

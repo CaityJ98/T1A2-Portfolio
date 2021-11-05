@@ -1,7 +1,41 @@
+.content{
+    h2{font-size: 50px;
+    text-align: center;}
+    
+
+}
+
 .post {
     a{
     text-decoration: none;
     color: hotpink;
     font-size: 35px;}
-    
+    text-align: center;
+    align-content: center;
+    justify-content: flex-end;
+
+    img{
+        height: 200px;
+        width: 200px;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+}
+@media screen and (min-width: 600px) { 
+    .items-section { 
+        flex-direction: row; 
+        img { 
+            width: 300px; 
+            height: 300px;
+        } 
+    } 
+} 
+@media screen and (max-width: 601px) { 
+    .items-section { 
+        img { 
+            width: 80vw; 
+            height: 80vw;
+        }     
+    } 
 }
