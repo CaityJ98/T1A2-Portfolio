@@ -131,14 +131,24 @@ nav a {
 
 .professional-links a {
   text-decoration: none;
-  color: black;
-  font-size: 35px;
-  text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  font-size: 32px;
+  color: whitesmoke;
+}
+
+.professional-links a:hover {
+  color: hotpink;
+}
+
+div {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .content h2 {
@@ -192,13 +202,9 @@ nav a {
   }
 }
 
-.blurb img {
-  width: 600px;
-  height: 600px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: wrap;
-          flex-direction: wrap;
+* {
+  -ms-flex-line-pack: center;
+      align-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
@@ -207,20 +213,58 @@ nav a {
           justify-content: center;
 }
 
-.blurb img p {
-  font-size: 32px;
+.blurb {
+  width: 50%;
+  margin: auto;
+}
+
+.blurb img {
+  width: 300px;
+  height: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.blurb p {
+  font-size: 24px;
+}
+
+.contact a {
+  text-decoration: underline;
+  color: whitesmoke;
+  font-size: large;
+}
+
+.contact a:hover {
+  color: hotpink;
+}
+
+.contact a:visited {
+  color: black;
 }
 
 /*--For mobile devices--*/
 @media screen and (max-width: 375px) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   body {
     background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
   }
   .blurb {
-    width: 80vh;
+    width: 100%;
   }
   .blurb p {
-    font-size: 32px;
+    font-size: large;
   }
 }
 /*# sourceMappingURL=main.css.map */

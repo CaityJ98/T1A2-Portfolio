@@ -1,12 +1,10 @@
 .professional-links a {
   text-decoration: none;
-  color: black;
-  font-size: 35px;
-  text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  font-size: 32px;
+  color: whitesmoke;
+}
+
+.professional-links a:hover {
+  color: hotpink;
 }
 /*# sourceMappingURL=ContactMe.css.map */
