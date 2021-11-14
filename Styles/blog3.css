@@ -1,0 +1,79 @@
+.Tech-industry {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: calc(100vh - 10vh);
+}
+
+.Tech-industry img {
+  padding: 15px;
+  background-color: lightgray;
+  width: 25vw;
+  height: 36vh;
+}
+
+.Tech-industry .tech-blurb {
+  background-color: black;
+  text-align: center;
+  padding: 50px;
+  margin: 50px 400px 0px 400px;
+}
+
+.Tech-industry .tech-blurb p {
+  color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .Tech-industry {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Tech-industry img {
+    width: 50vw;
+    height: 25vh;
+  }
+  .Tech-industry .tech-blurb {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .Tech-industry {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Tech-industry img {
+    width: 40vw;
+    height: 25vh;
+  }
+  .Tech-industry .tech-blurb {
+    margin: 100px;
+    padding: 10px;
+  }
+  .Tech-industry .tech-blurb p {
+    font-size: large;
+  }
+}
+/*# sourceMappingURL=blog3.css.map */

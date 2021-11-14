@@ -1,17 +1,18 @@
-@mixin flexCenter($justify) {
-    display: flex;
-    justify-content: $justify;
-    align-items: center;
-}
+
+
 body {
-    background-image: url("https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+    background-image: url("https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
     background-color: #cccccc;
     background-position:  center;
     background-attachment: fixed;
     background-repeat: no-repeat; 
     background-size: cover;
+    display: flex;
+    flex-direction: column;
     
     
+   
+        
 
    }
 
@@ -21,30 +22,42 @@ body {
 
      nav {
         height: 100%;
+        width: 100%;
         background-color: black; 
         font-family: 'Times New Roman', Arial, serif;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         text-align: center;
-        
-
-
-
-        
-
+        position: sticky;
     }
+    
 
 }
-.landing div{
-    align-content: center;
-    justify-content: center;
-   margin-top: 200px;
-   margin-left: 420px;
+
+
+    .home{
+        height: calc(100vh - 10vh);
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    align-self: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    margin: -200px 0 0 -500px;
+  
+    }
+
+.landing{
+   
    border-style: double;
    border-width: 5vh;
-   position: fixed;
+   
+   
+   
    
 
    
@@ -53,25 +66,43 @@ body {
         font-size: 65px;
         text-align: center;
         text-decoration: underline;
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: 5;
+        animation-timing-function: linear;
+
 
 
     }
     h2{
-        color: white;
+        color: lightslategrey;
         font-size: 45px;
         text-align: center;
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: 5;
+        animation-timing-function: linear;
        
     }
     h3{
-        color: white;
+        color: lightslategrey;
         font-size: 35px;
         text-align: center;
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: 25;
+        animation-timing-function: linear;
        
         
     }
-
-
 }
+@keyframes change {
+    0% {color: black};
+    50% {color: lightsteelblue};
+    100%{color: black};
+}
+
+
 
 
 nav a{
@@ -85,62 +116,109 @@ nav a{
 
 
 }
-
+.logos{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    column-gap: 90px;
+    img{
+    width: 90px;
+    height: 90px;}
+}
+.alinks{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    margin-bottom: 40px;
+    column-gap: 70px;
+    padding: 0px;
+    
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            color:whitesmoke; 
+            }
+        
+            
+        a:link, a:visited {
+            background-color: lightblue;
+            color: white;
+            padding: 14px 25px;
+            text-align: center; 
+            text-decoration: none;
+        
+    
+}
+}
 
 
    /*--For mobile devices--*/
    @media screen and (max-width: 375px) {
    
         body {
-        background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+        background-image: url(https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
        
-    }
-    .landing div{
-        padding: 0;
-       flex-wrap: wrap;
-        flex-direction: column; 
-        margin-left: 2px;
-        
-        
-        
-        h1{
-            font-size: larger;
+        .home{
+            
+        border-width: 3vh;
+        display: contents;
+           flex-direction: column;
+           justify-content: center;
+           h1{
+               font-size: 32px;
+           }
+           h2{
+               font-size:24px;
+           }
+           h3{
+               font-size:18px;
+           }
+       }
+       .landing{
+           margin-top: 10vh;
 
-        } 
-        h2{
-            font-size: large;
-            text-align: center;
-        }
-        h3{
-            font-size: large;
-            text-align: center;
-        }
+       }
+       .alinks{
 
-       
+           
+           a{
+               font-size: 14px;
+           }
+       }
+       .logos{
+           margin-top: 5vh;
+           column-gap: 115px;
+           img{
+               width: 15vw;
+               height:10vh;
+               
+           }
+       }
     }
+    
  
 }
 
 /*-----For tablets: ---------------*/
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     body {
-        background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
-    }
-    .landing div{
-        position: fixed;
-        align-items: center;
-        justify-content: center;
+        background-image: url(https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+        display: flex;
         flex-direction: column;
-        margin-left: 10px;
-        margin-right: 10px;
-       
+        justify-content: center;
+        
+}
+    .home{
+        justify-content: center;
+        display: contents;
+    }
+    .landing{
+        margin-top: 15vh;
     }
 }
 
-/*-----For desktop devices ------*/
-@media screen and (min-width: 1025px) {
-    body {
-        background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
-   }
-}
+
 

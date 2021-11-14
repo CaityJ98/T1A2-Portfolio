@@ -1,66 +1,117 @@
-* {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.content1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@-webkit-keyframes change {
+  0% {
+    color: black;
+  }
+  50% {
+    color: lightsteelblue;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes change {
+  0% {
+    color: black;
+  }
+  50% {
+    color: lightsteelblue;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.title h1 {
+  font-size: 50px;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.blurb {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.blurb {
-  width: 50%;
-  margin: auto;
-}
-
 .blurb img {
+  padding: 15px;
+  background-color: black;
   width: 300px;
   height: 300px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: wrap;
-          flex-direction: wrap;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .blurb p {
+  width: 40vw;
   font-size: 24px;
+}
+
+.contact {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .contact a {
   text-decoration: underline;
-  color: whitesmoke;
-  font-size: large;
+  color: black;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.contact a:visited {
+  color: grey;
 }
 
 .contact a:hover {
   color: hotpink;
+  font-size: 32px;
 }
 
-.contact a:visited {
-  color: black;
-}
-
-/*--For mobile devices--*/
 @media screen and (max-width: 375px) {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  body {
-    background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+  .content1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
   }
-  .blurb {
-    width: 100%;
+  .blurb img {
+    width: 50vw;
+    height: 25vh;
   }
   .blurb p {
-    font-size: large;
+    width: 100vw;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=AboutMe.css.map */

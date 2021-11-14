@@ -1,10 +1,17 @@
 body {
-  background-image: url("https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+  background-image: url("https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
   background-color: #cccccc;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .nav-header {
@@ -13,6 +20,7 @@ body {
 
 .nav-header nav {
   height: 100%;
+  width: 100%;
   background-color: black;
   font-family: 'Times New Roman', Arial, serif;
   display: -webkit-box;
@@ -20,45 +28,107 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
-.landing div {
-  -ms-flex-line-pack: center;
-      align-content: center;
+.home {
+  height: calc(100vh - 10vh);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 200px;
-  margin-left: 420px;
-  border-style: double;
-  border-width: 5vh;
-  position: fixed;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -500px;
 }
 
-.landing div h1 {
+.landing {
+  border-style: double;
+  border-width: 5vh;
+}
+
+.landing h1 {
   color: black;
   font-size: 65px;
   text-align: center;
   text-decoration: underline;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
-.landing div h2 {
-  color: white;
+.landing h2 {
+  color: lightslategrey;
   font-size: 45px;
   text-align: center;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
-.landing div h3 {
-  color: white;
+.landing h3 {
+  color: lightslategrey;
   font-size: 35px;
   text-align: center;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: 25;
+          animation-iteration-count: 25;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes change {
+  0% {
+    color: black;
+  }
+  50% {
+    color: lightsteelblue;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes change {
+  0% {
+    color: black;
+  }
+  50% {
+    color: lightsteelblue;
+  }
+  100% {
+    color: black;
+  }
 }
 
 nav a {
@@ -72,60 +142,129 @@ nav a {
   display: flex;
 }
 
+.logos {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 90px;
+          column-gap: 90px;
+}
+
+.logos img {
+  width: 90px;
+  height: 90px;
+}
+
+.alinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+  -webkit-column-gap: 70px;
+          column-gap: 70px;
+  padding: 0px;
+}
+
+.alinks a {
+  text-decoration: none;
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.alinks a:link, .alinks a:visited {
+  background-color: lightblue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
 /*--For mobile devices--*/
 @media screen and (max-width: 375px) {
   body {
-    background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
-  }
-  .landing div {
-    padding: 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    background-image: url(https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 2px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .landing div h1 {
-    font-size: larger;
+  body .home {
+    border-width: 3vh;
+    display: contents;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .landing div h2 {
-    font-size: large;
-    text-align: center;
+  body .home h1 {
+    font-size: 32px;
   }
-  .landing div h3 {
-    font-size: large;
-    text-align: center;
+  body .home h2 {
+    font-size: 24px;
+  }
+  body .home h3 {
+    font-size: 18px;
+  }
+  body .landing {
+    margin-top: 10vh;
+  }
+  body .alinks a {
+    font-size: 14px;
+  }
+  body .logos {
+    margin-top: 5vh;
+    -webkit-column-gap: 115px;
+            column-gap: 115px;
+  }
+  body .logos img {
+    width: 15vw;
+    height: 10vh;
   }
 }
 
 /*-----For tablets: ---------------*/
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   body {
-    background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
-  }
-  .landing div {
-    position: fixed;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-}
-
-/*-----For desktop devices ------*/
-@media screen and (min-width: 1025px) {
-  body {
-    background-image: url(https://images.unsplash.com/photo-1532210317995-cc56d90177d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+  .home {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: contents;
+  }
+  .landing {
+    margin-top: 15vh;
   }
 }
 /*# sourceMappingURL=index.css.map */

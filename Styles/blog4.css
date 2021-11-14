@@ -1,0 +1,79 @@
+.Maisie {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: calc(100vh - 10vh);
+}
+
+.Maisie img {
+  padding: 15px;
+  background-color: black;
+  width: 25vw;
+  height: 36vh;
+}
+
+.Maisie .Maisie-blurb {
+  background-color: black;
+  text-align: center;
+  padding: 50px;
+  margin: 50px 400px 0px 400px;
+}
+
+.Maisie .Maisie-blurb p {
+  color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .Maisie {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Maisie img {
+    width: 50vw;
+    height: 25vh;
+  }
+  .Maisie .Maisie-blurb {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .Maisie {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Maisie img {
+    width: 40vw;
+    height: 25vh;
+  }
+  .Maisie .Maisie-blurb {
+    margin: 100px;
+    padding: 10px;
+  }
+  .Maisie .Maisie-blurb p {
+    font-size: large;
+  }
+}
+/*# sourceMappingURL=blog4.css.map */

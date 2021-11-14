@@ -1,41 +1,75 @@
-.content{
-    h2{font-size: 50px;
-    text-align: center;}
+.blogs11{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    img{
+        height: 400px;
+        width: 400px;
+        margin: 20px;
+        
+    }
+       
+    
+
     
 
 }
-
+@keyframes change {
+    0% {color: black};
+    50% {color: lightsteelblue};
+    100%{color: black};}
+.ALOB{
+    h1{
+    font-size: 50px;
+    animation-name: change;
+    animation-duration: 5s;
+    animation-iteration-count: 50;
+    animation-timing-function: linear;}
+   
+}
 .post {
+    border-style: solid;
+   border-width: 1vh;
+   align-items: center;
+   justify-content: center;
+
+   
+    
     a{
     text-decoration: none;
     color: hotpink;
-    font-size: 35px;}
-    text-align: center;
-    align-content: center;
-    justify-content: flex-end;
+    font-size: 40px;
 
-    img{
-        height: 200px;
-        width: 200px;
-        flex-wrap: wrap;
-        flex-direction: column;
-
+   
+    } 
+    a:visited{
+        color: limegreen;
+        
     }
+    a:hover{
+        color: magenta;
+        font-size: 50px;
+    }
+   
+
+    
 }
-@media screen and (min-width: 600px) { 
-    .items-section { 
-        flex-direction: row; 
-        img { 
-            width: 300px; 
-            height: 300px;
-        } 
-    } 
-} 
-@media screen and (max-width: 601px) { 
-    .items-section { 
-        img { 
-            width: 80vw; 
-            height: 80vw;
-        }     
-    } 
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;}
+        .blogs11{
+            display: flex;
+
+        
+    img{ 
+        width: 65vw; 
+        height: 35vh;
+    }     
+}
+
 }

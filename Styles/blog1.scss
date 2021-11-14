@@ -1,0 +1,85 @@
+.travels{
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    height: calc(100vh - 10vh);
+   img{
+    padding: 15px;
+    background-color: black;
+    width: 25vw;
+    height: 36vh;
+       
+    }
+
+    .travel-blurb{
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+    margin: 50px 400px 0px 400px;
+    p{
+        color: white;
+    }
+    
+
+    
+}
+}
+.travel-maps{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+     justify-content: center;
+     margin: 200px;
+     h2{
+         text-align: center;
+     }
+}
+@media screen and (max-width: 400px){
+    .travels{
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+        img{
+            width: 50vw;
+            height: 25vh;
+        }
+    
+    .travel-blurb{
+       margin: 0px;
+       padding: 0px;
+       
+        
+    }
+
+}
+.travel-maps{
+    margin: 0px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .travels{
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+        img{
+            width: 40vw;
+            height: 25vh;
+        }
+    
+    .travel-blurb{
+       margin: 100px;
+       padding: 10px;
+       
+        p{
+            font-size: large;
+        }
+    }
+}
+.travel-maps{
+    margin: 0px;
+}
+}
