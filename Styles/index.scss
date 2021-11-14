@@ -50,7 +50,7 @@ nav a{
     width: 90px;
     height: 90px;}
 }
-//sets link background to light blue, with a 70 pixel gap between each link. Sets the font to white and centers the links in the middle of the page,
+//sets link background to light blue, with a 70 pixel gap between each link. Sets the font to white and centers the links in the middle of the page
 //
 
 .alinks{
@@ -73,7 +73,7 @@ nav a{
             color: white;
             padding: 14px 25px;
             text-align: center; 
-            text-decoration: none;
+            text-decoration: none;}
         
     
 }
@@ -89,18 +89,18 @@ nav a{
     top: 50%;
     left: 50%;
     
-    margin: -200px 0 0 -500px;
+    margin: -200px 0 0 -500px;}
   
-    }
+    
 //sets a double border around the text elements//
 .landing{
    
    border-style: double;
    border-width: 5vh;
+
    
    
-   
-   // changes H1, H2 & H3 title elements to an animation that transitions from black to grey back to black over 5 seconds 50 times//
+//    changes H1, H2 & H3 title elements to an animation that transitions from black to grey back to black over 5 seconds 50 times//
 
    
     h1{ 
@@ -138,6 +138,7 @@ nav a{
         
     }
 }
+    
 @keyframes change {
     0% {color: black};
     50% {color: lightsteelblue};
@@ -148,7 +149,7 @@ nav a{
 
 
 
-}
+
 
 
    /*--For mobile devices--*/

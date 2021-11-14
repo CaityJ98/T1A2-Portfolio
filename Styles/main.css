@@ -98,7 +98,7 @@ nav a {
   text-decoration: none;
 }
 
-.alinks .home {
+.home {
   height: calc(100vh - 10vh);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -118,12 +118,12 @@ nav a {
   margin: -200px 0 0 -500px;
 }
 
-.alinks .landing {
+.landing {
   border-style: double;
   border-width: 5vh;
 }
 
-.alinks .landing h1 {
+.landing h1 {
   color: black;
   font-size: 65px;
   text-align: center;
@@ -138,7 +138,7 @@ nav a {
           animation-timing-function: linear;
 }
 
-.alinks .landing h2 {
+.landing h2 {
   color: lightslategrey;
   font-size: 45px;
   text-align: center;
@@ -152,7 +152,7 @@ nav a {
           animation-timing-function: linear;
 }
 
-.alinks .landing h3 {
+.landing h3 {
   color: lightslategrey;
   font-size: 35px;
   text-align: center;
