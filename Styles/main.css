@@ -759,7 +759,8 @@ h1 {
     padding: 0px;
   }
   .travel-maps {
-    margin: 0px;
+    text-align: center;
+    margin-top: 50px;
   }
 }
 
@@ -788,7 +789,7 @@ h1 {
     font-size: large;
   }
   .travel-maps {
-    margin: 0px;
+    margin-top: 50px;
   }
 }
 
