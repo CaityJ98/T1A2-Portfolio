@@ -28,6 +28,7 @@
   color: white;
 }
 
+/*--For mobile devices--*/
 @media screen and (max-width: 400px) {
   .Maisie {
     -webkit-box-pack: space-evenly;

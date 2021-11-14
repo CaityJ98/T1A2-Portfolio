@@ -1,3 +1,6 @@
+//sets elements in the Coder Academy div to center, and spaced evenly through out the page. Sets back ground of picture to black, to give it a nice border
+// sets image to a medium square, sets the background of the text to black, set font to white and centers the text in the middle of the page//
+
 .CoderAcademy{
     justify-content: space-evenly;
     flex-direction: column;
@@ -24,6 +27,7 @@
     
 }
 }
+/*--For mobile devices--*/
 @media screen and (max-width: 400px){
     .CoderAcademy{
         justify-content: space-evenly;
@@ -43,7 +47,7 @@
     }
 
 }}
-
+  /*-----For tablets: ---------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
     .CoderAcademy{

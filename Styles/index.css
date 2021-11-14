@@ -39,98 +39,6 @@ body {
   position: sticky;
 }
 
-.home {
-  height: calc(100vh - 10vh);
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -200px 0 0 -500px;
-}
-
-.landing {
-  border-style: double;
-  border-width: 5vh;
-}
-
-.landing h1 {
-  color: black;
-  font-size: 65px;
-  text-align: center;
-  text-decoration: underline;
-  -webkit-animation-name: change;
-          animation-name: change;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: 5;
-          animation-iteration-count: 5;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-.landing h2 {
-  color: lightslategrey;
-  font-size: 45px;
-  text-align: center;
-  -webkit-animation-name: change;
-          animation-name: change;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: 5;
-          animation-iteration-count: 5;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-.landing h3 {
-  color: lightslategrey;
-  font-size: 35px;
-  text-align: center;
-  -webkit-animation-name: change;
-          animation-name: change;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: 25;
-          animation-iteration-count: 25;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes change {
-  0% {
-    color: black;
-  }
-  50% {
-    color: lightsteelblue;
-  }
-  100% {
-    color: black;
-  }
-}
-
-@keyframes change {
-  0% {
-    color: black;
-  }
-  50% {
-    color: lightsteelblue;
-  }
-  100% {
-    color: black;
-  }
-}
-
 nav a {
   color: white;
   text-decoration: none;
@@ -188,6 +96,98 @@ nav a {
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
+}
+
+.alinks .home {
+  height: calc(100vh - 10vh);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -500px;
+}
+
+.alinks .landing {
+  border-style: double;
+  border-width: 5vh;
+}
+
+.alinks .landing h1 {
+  color: black;
+  font-size: 65px;
+  text-align: center;
+  text-decoration: underline;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.alinks .landing h2 {
+  color: lightslategrey;
+  font-size: 45px;
+  text-align: center;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.alinks .landing h3 {
+  color: lightslategrey;
+  font-size: 35px;
+  text-align: center;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: 50;
+          animation-iteration-count: 50;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes change {
+  0% {
+    color: black;
+  }
+  50% {
+    color: lightsteelblue;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes change {
+  0% {
+    color: black;
+  }
+  50% {
+    color: lightsteelblue;
+  }
+  100% {
+    color: black;
+  }
 }
 
 /*--For mobile devices--*/

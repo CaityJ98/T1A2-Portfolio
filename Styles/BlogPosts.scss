@@ -1,3 +1,4 @@
+//sets all elements on page to center and places them in a vertical column, sets pictures to be 400 pixel squares//
 .blogs11{
     display: flex;
     flex-direction: column;
@@ -16,6 +17,7 @@
     
 
 }
+// changes H1 title elements to an animation that transitions from black to grey back to black over 5 seconds 50 times //
 @keyframes change {
     0% {color: black};
     50% {color: lightsteelblue};
@@ -29,6 +31,8 @@
     animation-timing-function: linear;}
    
 }
+// sets a single black border around each blog post and centers them in the page. Links are hot pink, when hovered over the text
+// gets bigger and turns neon purple, once visited the links to lime green//
 .post {
     border-style: solid;
    border-width: 1vh;
@@ -56,6 +60,7 @@
 
     
 }
+/*--For mobile devices--*/
 @media screen and (max-width: 375px) {
     body {
         background-image: url(https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);

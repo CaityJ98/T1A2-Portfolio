@@ -125,6 +125,7 @@ h1 {
   text-decoration: none;
 }
 
+/*--For mobile devices--*/
 @media screen and (max-width: 375px) {
   .contact-section {
     -webkit-box-pack: space-evenly;

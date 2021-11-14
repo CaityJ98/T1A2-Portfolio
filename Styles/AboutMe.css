@@ -42,17 +42,10 @@
           animation-name: change;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-iteration-count: 5;
-          animation-iteration-count: 5;
+  -webkit-animation-iteration-count: 50;
+          animation-iteration-count: 50;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-}
-
-.blurb {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .blurb img {
@@ -89,6 +82,7 @@
   font-size: 32px;
 }
 
+/*--For mobile devices--*/
 @media screen and (max-width: 375px) {
   .content1 {
     display: -webkit-box;

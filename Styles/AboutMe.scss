@@ -1,14 +1,16 @@
+//sets all content on pages to center and in a column//
 .content1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align:center;
-   
+
     
 
    
 
 }
+// changes H1 title elements to an animation that transitions from black to grey back to black over 5 seconds 50 Times, sets font to 50px //
 @keyframes change {
     0% {color: black};
     50% {color: lightsteelblue};
@@ -20,15 +22,15 @@
         font-size: 50px;
         animation-name: change;
         animation-duration: 5s;
-        animation-iteration-count: 5;
+        animation-iteration-count: 50;
         animation-timing-function: linear;
         
     }
 }
-
+//sets font to 24 pixels, sets picture to a 300pixel square, sets background of picture to black with a 15pixel padding and styles paragraph
+// to be in line with the picture//
 .blurb {
-    text-align: center;
-    justify-content: center;
+    
     img{ 
         padding: 15px;
     background-color: black;
@@ -46,7 +48,8 @@
        
     
     
-
+//styles a link at the bottom of the page to the Contact page. Link begins black, when hovered over will change to a hotpink color
+// and once visted will turn grey// 
 
 .contact{
     align-items: flex-end;
@@ -67,7 +70,7 @@
         
     }
 }
-
+/*--For mobile devices--*/
   @media screen and (max-width: 375px)  {
     .content1 {
         display: flex;

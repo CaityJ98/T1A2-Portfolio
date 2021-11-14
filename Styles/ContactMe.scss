@@ -1,9 +1,11 @@
+//sets font of contact form to 24 pixels//
 .contact-section{
     font-size: 24px;
     
    
 
 }
+// changes H1 title elements to an animation that transitions from black to grey back to black over 5 seconds 50 times //
 @keyframes change {
     0% {color: black};
     50% {color: lightsteelblue};
@@ -17,6 +19,7 @@ h1{
     animation-timing-function: linear;
     
 }
+//sets all content on pages to be spaced evenly through the declared space, sets all content to be centered//
 .content {
     display: flex;
     flex-direction: column;
@@ -31,6 +34,7 @@ h1{
 
    
 }
+//sets links and icons at the end of page in the center//
 .professional{
     height: calc(100vh - 50vh);
     justify-content: flex-end;
@@ -39,7 +43,7 @@ h1{
     
 
 }
-
+//sets icons above links//
 .professional-img{
     display: flex;
     flex-direction: row; 
@@ -53,6 +57,7 @@ h1{
         height: 10vh;
         
     } }
+    //sets the link background colour to light blue, the font to whitesmoke, distributes them evenly across the page in a row.//
 .professional-links{
   
     display: flex;
@@ -83,7 +88,7 @@ h1{
         }
     }
 
-
+/*--For mobile devices--*/
     @media screen and (max-width: 375px){
         .contact-section{
             justify-content: space-evenly;

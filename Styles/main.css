@@ -39,98 +39,6 @@ body {
   position: sticky;
 }
 
-.home {
-  height: calc(100vh - 10vh);
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -200px 0 0 -500px;
-}
-
-.landing {
-  border-style: double;
-  border-width: 5vh;
-}
-
-.landing h1 {
-  color: black;
-  font-size: 65px;
-  text-align: center;
-  text-decoration: underline;
-  -webkit-animation-name: change;
-          animation-name: change;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: 5;
-          animation-iteration-count: 5;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-.landing h2 {
-  color: lightslategrey;
-  font-size: 45px;
-  text-align: center;
-  -webkit-animation-name: change;
-          animation-name: change;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: 5;
-          animation-iteration-count: 5;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-.landing h3 {
-  color: lightslategrey;
-  font-size: 35px;
-  text-align: center;
-  -webkit-animation-name: change;
-          animation-name: change;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: 25;
-          animation-iteration-count: 25;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes change {
-  0% {
-    color: black;
-  }
-  50% {
-    color: lightsteelblue;
-  }
-  100% {
-    color: black;
-  }
-}
-
-@keyframes change {
-  0% {
-    color: black;
-  }
-  50% {
-    color: lightsteelblue;
-  }
-  100% {
-    color: black;
-  }
-}
-
 nav a {
   color: white;
   text-decoration: none;
@@ -188,6 +96,98 @@ nav a {
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
+}
+
+.alinks .home {
+  height: calc(100vh - 10vh);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -500px;
+}
+
+.alinks .landing {
+  border-style: double;
+  border-width: 5vh;
+}
+
+.alinks .landing h1 {
+  color: black;
+  font-size: 65px;
+  text-align: center;
+  text-decoration: underline;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.alinks .landing h2 {
+  color: lightslategrey;
+  font-size: 45px;
+  text-align: center;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: 5;
+          animation-iteration-count: 5;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.alinks .landing h3 {
+  color: lightslategrey;
+  font-size: 35px;
+  text-align: center;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: 50;
+          animation-iteration-count: 50;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes change {
+  0% {
+    color: black;
+  }
+  50% {
+    color: lightsteelblue;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes change {
+  0% {
+    color: black;
+  }
+  50% {
+    color: lightsteelblue;
+  }
+  100% {
+    color: black;
+  }
 }
 
 /*--For mobile devices--*/
@@ -383,6 +383,7 @@ h1 {
   text-decoration: none;
 }
 
+/*--For mobile devices--*/
 @media screen and (max-width: 375px) {
   .contact-section {
     -webkit-box-pack: space-evenly;
@@ -557,6 +558,7 @@ h1 {
   font-size: 50px;
 }
 
+/*--For mobile devices--*/
 @media screen and (max-width: 375px) {
   body {
     background-image: url(https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
@@ -614,17 +616,10 @@ h1 {
           animation-name: change;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-iteration-count: 5;
-          animation-iteration-count: 5;
+  -webkit-animation-iteration-count: 50;
+          animation-iteration-count: 50;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-}
-
-.blurb {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .blurb img {
@@ -661,6 +656,7 @@ h1 {
   font-size: 32px;
 }
 
+/*--For mobile devices--*/
 @media screen and (max-width: 375px) {
   .content1 {
     display: -webkit-box;
@@ -737,6 +733,7 @@ h1 {
   text-align: center;
 }
 
+/*--For mobile devices--*/
 @media screen and (max-width: 400px) {
   .travels {
     -webkit-box-pack: space-evenly;
@@ -759,11 +756,11 @@ h1 {
     padding: 0px;
   }
   .travel-maps {
-    text-align: center;
     margin-top: 50px;
   }
 }
 
+/*-----For tablets: ---------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .travels {
     -webkit-box-pack: space-evenly;
@@ -823,6 +820,7 @@ h1 {
   color: white;
 }
 
+/*--For mobile devices--*/
 @media screen and (max-width: 400px) {
   .coding {
     -webkit-box-pack: space-evenly;
@@ -846,6 +844,7 @@ h1 {
   }
 }
 
+/*-----For tablets: ---------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .coding {
     -webkit-box-pack: space-evenly;
@@ -902,6 +901,7 @@ h1 {
   color: white;
 }
 
+/*--For mobile devices--*/
 @media screen and (max-width: 400px) {
   .Tech-industry {
     -webkit-box-pack: space-evenly;
@@ -925,6 +925,7 @@ h1 {
   }
 }
 
+/*-----For tablets: ---------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .Tech-industry {
     -webkit-box-pack: space-evenly;
@@ -981,6 +982,7 @@ h1 {
   color: white;
 }
 
+/*--For mobile devices--*/
 @media screen and (max-width: 400px) {
   .Maisie {
     -webkit-box-pack: space-evenly;
@@ -1060,6 +1062,7 @@ h1 {
   color: white;
 }
 
+/*--For mobile devices--*/
 @media screen and (max-width: 400px) {
   .CoderAcademy {
     -webkit-box-pack: space-evenly;
@@ -1083,6 +1086,7 @@ h1 {
   }
 }
 
+/*-----For tablets: ---------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .CoderAcademy {
     -webkit-box-pack: space-evenly;

@@ -1,5 +1,5 @@
 
-
+//sets a static background image that doesn't repeat//
 body {
     background-image: url("https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
     background-color: #cccccc;
@@ -9,12 +9,9 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    
-    
-   
-        
-
+ 
    }
+   //sets a horizontal navigation bar at the top of the page, the colour is black//
 
 .nav-header {
     height: 10vh;
@@ -35,8 +32,53 @@ body {
     
 
 }
+//sets the font colour of the html links to white//
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 27px;
+    flex-wrap: wrap;
+    display: flex;
+}
+// sets the icons for the links in place above the links.//
+.logos{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    column-gap: 90px;
+    img{
+    width: 90px;
+    height: 90px;}
+}
+//sets link background to light blue, with a 70 pixel gap between each link. Sets the font to white and centers the links in the middle of the page,
+//
 
+.alinks{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    margin-bottom: 40px;
+    column-gap: 70px;
+    padding: 0px;
+    
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            color:whitesmoke; 
+            }
+        
+            
+        a:link, a:visited {
+            background-color: lightblue;
+            color: white;
+            padding: 14px 25px;
+            text-align: center; 
+            text-decoration: none;
+        
+    
+}
 
+//sets all elements to the middle of the page//
     .home{
         height: calc(100vh - 10vh);
         flex-wrap: wrap;
@@ -50,7 +92,7 @@ body {
     margin: -200px 0 0 -500px;
   
     }
-
+//sets a double border around the text elements//
 .landing{
    
    border-style: double;
@@ -58,7 +100,7 @@ body {
    
    
    
-   
+   // changes H1, H2 & H3 title elements to an animation that transitions from black to grey back to black over 5 seconds 50 times//
 
    
     h1{ 
@@ -90,7 +132,7 @@ body {
         text-align: center;
         animation-name: change;
         animation-duration: 10s;
-        animation-iteration-count: 25;
+        animation-iteration-count: 50;
         animation-timing-function: linear;
        
         
@@ -105,50 +147,7 @@ body {
 
 
 
-nav a{
-    color: white;
-    text-decoration: none;
-    font-size: 27px;
-    flex-wrap: wrap;
-    display: flex;
-    
-    
 
-
-}
-.logos{
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    column-gap: 90px;
-    img{
-    width: 90px;
-    height: 90px;}
-}
-.alinks{
-    display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    margin-bottom: 40px;
-    column-gap: 70px;
-    padding: 0px;
-    
-        a{
-            text-decoration: none;
-            font-size: 20px;
-            color:whitesmoke; 
-            }
-        
-            
-        a:link, a:visited {
-            background-color: lightblue;
-            color: white;
-            padding: 14px 25px;
-            text-align: center; 
-            text-decoration: none;
-        
-    
-}
 }
 
 

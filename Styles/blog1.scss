@@ -1,3 +1,6 @@
+//sets elements in the travel div to center, and spaced evenly through out the page. Sets back ground of picture to black, to give it a nice border
+// sets image to a medium square, sets the background of the text to black, set font to white and centers the text in the middle of the page//
+
 .travels{
     justify-content: space-evenly;
     flex-direction: column;
@@ -24,6 +27,7 @@
     
 }
 }
+//sets the embedded maps and H2 elements into the center of the page//
 .travel-maps{
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +38,7 @@
          text-align: center;
      }
 }
+/*--For mobile devices--*/
 @media screen and (max-width: 400px){
     .travels{
         justify-content: space-evenly;
@@ -58,7 +63,7 @@
     margin-top: 50px;
 }
 }
-
+  /*-----For tablets: ---------------*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
     .travels{
